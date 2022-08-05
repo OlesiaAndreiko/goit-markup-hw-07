@@ -137,8 +137,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-
+  
   min-width: 200px;
   min-height: 50px;
 
@@ -158,6 +157,10 @@ input {
   cursor: pointer;
 
   transition: background-color var(--animation);
+}
+
+.basic-btn--position {
+  margin: 0 auto;
 }
 
 .basic-btn:hover,
@@ -266,13 +269,14 @@ input {
   color: var(--accent-cl);
 }
 
-.header--contact {
+.header--position {
   margin-left: auto;
 }
 
-.header--position {
-  gap: 10px;
+.header--contact {
+   gap: 10px;
 }
+
 
 /*  Hero section */
 
@@ -299,9 +303,6 @@ input {
 
 .hero__title {
   max-width: 696px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -312,6 +313,14 @@ input {
   color: var(--white-cl);
   text-shadow: var(--shadow-hero-title);
 }
+
+.hero__title--position {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
 
 /* Вenefits section */
 
@@ -329,21 +338,27 @@ input {
   justify-content: center;
 
   height: 120px;
-  margin-bottom: 30px;
-
+  
   background-color: var(--light-bg-cl);
 
   border-radius: var(--radius-standart);
 }
 
-.benefits__title {
-  margin-bottom: 10px;
+.benefits__icon--position {
+  margin-bottom: 30px;
+}
 
-  line-height: calc(16 / 14);
+.benefits__title {
+   line-height: calc(16 / 14);
   text-transform: uppercase;
   font-size: 14px;
 
   color: var(--title-txt-cl);
+}
+
+.benefits__title--position {
+  margin-bottom: 10px;
+
 }
 
 /* Servises section */
@@ -627,8 +642,7 @@ input {
   width: 358px;
   height: 50px;
   padding: 15px;
-  margin-right: auto;
-
+ 
   border: 1px solid var(--border-subsc-cl);
   border-radius: var(--radius-standart);
   box-shadow: var(--shadow-hero-subsc-btn);
@@ -636,6 +650,10 @@ input {
   background-color: transparent;
 
   transition: border-color var(--animation);
+}
+
+.footer__user-mail--position {
+  margin-right: auto;
 }
 
 .footer__user-mail:hover,
@@ -769,8 +787,6 @@ input {
 .register__title {
   display: block;
 
-  margin-bottom: 12px;
-
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
@@ -778,33 +794,40 @@ input {
   color: var(--title-txt-cl);
 }
 
-.register--contact {
+.register__title--position {
+  margin-bottom: 12px;
+}
+
+.register--contacts {
   margin-bottom: 20px;
 }
 
-.register__label:not(:last-child) {
+.register--position:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
 
-.register__label--name {
+.register--label {
   display: block;
   padding-left: 2px;
-  margin-bottom: 4px;
-
+  
   text-align: left;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
 
-.register__label--wrap {
+.register--name {
+  margin-bottom: 4px;
+}
+
+.register--wrap {
   position: relative;
   display: block;
 }
 
-.register__label--input,
-.register__comment {
+.register--input,
+.register--comment {
   display: block;
 
   width: 100%;
@@ -821,25 +844,21 @@ input {
   transition: border-color var(--animation);
 }
 
-.register__comment {
+.register--comment {
   padding: 12px 16px;
   height: 120px;
 
   resize: none;
 }
 
-/* textarea::placeholder {
-  color: var(--textarea-placeholder-cl);
-} */
-
-.register__comment:placeholder-shown {
+.register--comment::placeholder {
   color: var(--textarea-placeholder-cl);
 }
 
-.register__label--input:hover,
-.register__label--input:focus,
-.register__comment:hover,
-.register__comment:focus {
+.register--input:hover,
+.register--input:focus,
+.register--comment:hover,
+.register--comment:focus {
   border-color: var(--accent-cl);
 }
 
@@ -853,8 +872,8 @@ input {
   transition: fill var(--animation);
 }
 
-.register__label--input:hover + .register__icon,
-.register__label--input:focus + .register__icon,
+.register--input:hover + .register__icon,
+.register--input:focus + .register__icon,
 .agreement--check:hover + .agreement__icon,
 .agreement--check:focus + .agreement__icon {
   fill: var(--accent-cl);
@@ -865,8 +884,11 @@ input {
   align-items: center;
   justify-content: center;
 
+    gap: 8px;
+}
+
+.agreement--position {
   margin-bottom: 30px;
-  gap: 8px;
 }
 
 .agreement__icon--check {

@@ -52,10 +52,10 @@
           </ul>
         </nav>
 
-        <ul class="header__list header--contact list">
+        <ul class="header__list header--position list">
           <li class="header__item">
             <a
-              class="header__link link header--position"
+              class="header__link link header--contact"
               href="mailto:info@devstudio.com"
               aria-label="електронна пошта"
             >
@@ -67,8 +67,8 @@
           </li>
           <li class="header__item">
             <a
-              class="header__link link header--position"
-              href="tel:++380961111111"
+              class="header__link link header--contact"
+              href="tel:+380961111111"
               aria-label="номер телефону"
             >
               <svg class="icon" width="10" height="16">
@@ -83,8 +83,8 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <h1 class="hero__title">Ефективні рішення для&nbsp;вашого бізнесу</h1>
-        <button class="basic-btn" type="button" data-modal-open>
+        <h1 class="hero__title hero__title--position">Ефективні рішення для&nbsp;вашого бізнесу</h1>
+        <button class="basic-btn basic-btn--position" type="button" data-modal-open>
           Замовити послугу
         </button>
       </section>
@@ -95,47 +95,47 @@
 
           <ul class="benefits__list list card-set">
             <li class="benefits__item card-item">
-              <div class="benefits__icon">
+              <div class="benefits__icon benefits__icon--position">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">увага до деталей</h3>
+              <h3 class="benefits__title benefits__title--position">увага до деталей</h3>
               <p class="">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li class="benefits__item card-item">
-              <div class="benefits__icon">
+              <div class="benefits__icon benefits__icon--position">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Пунктуальність</h3>
+              <h3 class="benefits__title benefits__title--position">Пунктуальність</h3>
               <p class="">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li class="benefits__item card-item">
-              <div class="benefits__icon">
+              <div class="benefits__icon benefits__icon--position">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Планування</h3>
+              <h3 class="benefits__title benefits__title--position">Планування</h3>
               <p class="">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="benefits__item card-item">
-              <div class="benefits__icon">
+              <div class="benefits__icon benefits__icon--position">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Сучасні технології</h3>
+              <h3 class="benefits__title benefits__title--position">Сучасні технології</h3>
               <p class="">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -610,7 +610,7 @@
           <strong class="footer__slogan footer__slogan--position">підпишіться на розсилку</strong>
           <form class="footer__form" name="footer-form" autocomplete="off">
             <input 
-            class="footer__user-mail" 
+            class="footer__user-mail footer__user-mail--position" 
             type="email" 
             name="footer-user-mail" 
             placeholder="E-mail" required />
@@ -634,16 +634,16 @@
         </button>
 
         <form class="register" name="register-form" autocomplete="off">
-          <strong class="register__title"
+          <strong class="register__title register__title--position"
             >Залиште свої дані, ми вам передзвонимо</strong
           >
 
-          <div class="register--contact" role="group">
-            <label class="register__label">
-              <span class="register__label--name">Ім'я</span>
-              <span class="register__label--wrap">
+          <div class="register--contacts" role="group">
+            <label class="register--position">
+              <span class="register--label register--name">Ім'я</span>
+              <span class="register--wrap">
                 <input
-                  class="register__label--input"
+                  class="register--input"
                   type="text"
                   name="user-name"
                   minlength="3"
@@ -653,11 +653,11 @@
                 </svg>
               </span>
             </label>
-            <label class="register__label">
-              <span class="register__label--name">Телефон</span>
-              <span class="register__label--wrap">
+            <label class="register--position">
+              <span class="register--label register--name">Телефон</span>
+              <span class="register--wrap">
                 <input
-                  class="register__label--input"
+                  class="register--input"
                   type="tel"
                   name="user-phone"
                   autofocus
@@ -668,11 +668,11 @@
                 </svg>
               </span>
             </label>
-            <label class="register__label">
-              <span class="register__label--name">Пошта</span>
-              <span class="register__label--wrap">
+            <label class="register--position">
+              <span class="register--label register--name">Пошта</span>
+              <span class="register--wrap">
                 <input
-                  class="register__label--input"
+                  class="register--input"
                   type="email"
                   name="user-mail"
                   required
@@ -682,17 +682,16 @@
                 </svg>
               </span>
             </label>
-            <label class="register__label">
-              <span class="register__label--name">Коментар</span>
+            <label class="register--position">
+              <span class="register--label register--name">Коментар</span>
               <textarea
-                class="register__comment"
+                class="register--comment"
                 name="user-comment"
                 rows="5"
-                placeholder="Введіть текст"
-              ></textarea>
+                placeholder="Введіть текст"></textarea>
             </label>
           </div>
-          <label class="agreement">
+          <label class="agreement agreement--position">
             <input
               class="agreement--check visually-hidden"
               type="checkbox"
@@ -720,7 +719,7 @@
               </a></span
             >
           </label>
-          <button class="basic-btn" type="submit">Відправити</button>
+          <button class="basic-btn basic-btn--position" type="submit">Відправити</button>
         </form>
       </div>
     </div>
