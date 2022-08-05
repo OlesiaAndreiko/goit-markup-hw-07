@@ -13,12 +13,13 @@
   /* bg-colors */
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
-  --accent-bg-btn-cl: #188ce8;
+  --accent-btn-bg-cl: #188ce8;
+  --social-footer-bg-cl: rgba(255, 255, 255, 0.1);
   --overlay-header-cl: rgba(47, 48, 58, 0.4);
   --olervay-serv-cl: rgba(47, 48, 58, 0.8);
   --ovarlay-modal-cl: rgba(0, 0, 0, 0.2);
-  --ovarlay-project: rgba(33, 150, 243, 0.9);
-  --social-footer-bg: rgba(255, 255, 255, 0.1);
+  --ovarlay-project-cl: rgba(33, 150, 243, 0.9);
+  
 
   /* others-colors */
   --accent-cl: #2196f3;
@@ -165,7 +166,7 @@ input {
 
 .basic-btn:hover,
 .basic-btn:focus {
-  background-color: var(--accent-bg-btn-cl);
+  background-color: var(--accent-btn-bg-cl);
 }
 
 .basic-btn--icon {
@@ -540,7 +541,7 @@ input {
   line-height: calc(28 / 18);
 
   color: var(--white-cl);
-  background-color: var(--ovarlay-project);
+  background-color: var(--ovarlay-project-cl);
 }
 
 .project__link:hover .project__overlay,
@@ -699,7 +700,7 @@ input {
 }
 
 .footer__social-link {
-  background-color: var(--social-footer-bg);
+  background-color: var(--social-footer-bg-cl);
   --social-clients-cl: var(--white-cl);
 }
 
